@@ -10,7 +10,6 @@ const io = socketIO(server);
 
 const port = 3001;
 const addr = 'localhost';
-//kriptirati poruke tako da korisnik ima kljuc, a server da otkljucava?
 
 var rooms = [];
 rooms['main_room'] = { id : 1, users : [] };
