@@ -1,0 +1,21 @@
+.App{
+    margin: 0%;    
+    height: 94%;
+    padding: 2%;
+    padding-top: 5%;
+}
+
+.sidebarButton{
+    z-index: 1;
+    position: fixed;
+    left: 1%;
+    top: 1%;
+}
+
+.sidebarIcon {
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    margin: 6px;
+    border-radius: 5px;
+  }

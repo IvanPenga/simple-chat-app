@@ -1,0 +1,13 @@
+  input[type=text], select {
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  .formContainer{
+    position: fixed;
+    bottom: 1px;
+    left: 50%;
+    transform: translateX(-50%)
+  }

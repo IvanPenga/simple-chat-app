@@ -1,0 +1,14 @@
+.Message{
+    border-radius: 7px;
+    background-color: lightblue;
+    padding: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    overflow: hidden;
+}
+
+.Message p{
+    font-size: 13px;
+    margin-bottom: 0px;
+    margin-top: 5px;
+}
