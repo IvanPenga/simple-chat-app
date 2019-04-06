@@ -11,11 +11,23 @@ const io = socketIO(server);
 const port = 3001;
 const addr = 'localhost';
 
+const RoomModel = require('./models/Room');
+
 var rooms = [];
 rooms['main_room'] = { id : 1, users : [] };
 
 app.get('/', function(req, res){
     res.end("It works!");
+});
+
+app.get('/rooms', async function(req, res){
+    const users = await RoomModel.Room.findAll();
+    res.send(users);
+});
+
+app.get('/rooms/:id', async function(req, res){
+    const users = await RoomModel.Room.findAll({ where : { id : req.params.id } });
+    res.send(users);
 });
 
 io.on('connection', (socket) => {
