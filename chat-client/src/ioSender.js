@@ -1,7 +1,12 @@
 import openSocket from 'socket.io-client';
 
-//const socket = openSocket('http://93.138.33.56:3001');
-const socket = openSocket('http://192.168.1.6:3001');
+//const socket = openSocket('http://93.136.183.167:3001');
+//const socket = openSocket('localhost:3001');
+var socket = openSocket('http://192.168.1.6:3001');
+
+function sendJoinRoom(roomName){
+    socket.emit("joinRoom", roomName);
+}
 
 function sendMessage(message){
     socket.emit("message", message);
@@ -41,4 +46,4 @@ function subscribeUserList(callback){
     });
 }
 
-export { sendMessage, subscribeWelcome, subscribeBroadcast, subscribeDisconnect, subscribeNewConnection, subscribeUserList, sendGetUsers }
+export { sendJoinRoom, sendMessage, subscribeWelcome, subscribeBroadcast, subscribeDisconnect, subscribeNewConnection, subscribeUserList, sendGetUsers }

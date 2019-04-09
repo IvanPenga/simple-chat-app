@@ -1,0 +1,16 @@
+.room{
+    width: 90%;
+    padding: 10px;
+    color: white;
+    font-size: 100%;
+    border-radius: 20px;
+    border-color: #ffffff;
+    border-width: 2px;
+    border-style: solid;
+    margin:10px;
+    text-align: center;
+}
+
+.room:hover {
+    background-color: rgb(9, 12, 37);
+}
